@@ -7,21 +7,14 @@ I wouldn't really recommend using it, but I built it, and it works fine for me.
 —Cameron
 -->
 <head>
-<title>Cameron Wheeler</title>
-<script type="text/javascript">
-//<![CDATA[
-try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"566ed1eecfa03b62798107bfc893f96e",petok:"0f931346ba2bd0a2784c5d89fd3270264c3b814e-1459444761-1800",zone:"cawhee.com",rocket:"0",apps:{"abetterbrowser":{"ie":"7"},"verelo":{"check_id":"6131"}},sha2test:0}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=e982913d31/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
-//]]>
-</script>
+<title>WeHateKoby.Club</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400' rel='stylesheet' type='text/css'>
 <style type="text/css">
 html {
 	overflow: hidden;
 	font-family: 'Source Code Pro';
-	padding-top: 1em;
-	padding-left: 1em;
-	padding-right: 1em;
-	font-size: 2em;
+	font-size: 10vw;
 	background-color: red;
 
 }
@@ -31,13 +24,28 @@ html {
 
 }
 .text {
+	top: 2em;
 	position: absolute;
-	top: 40%;
-	left: 34%;
+	text-align: center;
 	color: white;
 }
 </style>
 </head>
 <body>
-<div class="overlay"><center><img width="100%" src="KLJ.jpg"></div> <div class="text">We hate this kid.</div>
+<div class="overlay" ><center><img width="100%" src="KLJ.jpg"></div> <div id="mouse" class="text">We hate this kid</div>
+<script>
+$(document).click(function() {
+	var fonts = new Array("Helvetica", "Comic Sans MS", "Impact", "Times New Roman", "Courier", "monospace", "Papyrus")
+    var quotes = new Array("hair", "dog", "car", "music", "twitter", "memes", "hams", "$20", "writing", "tootsie rolls", "clothes", "ass"),
+    randno = quotes[Math.floor( Math.random() * quotes.length )];
+    fonto = fonts[Math.floor(Math.random() * fonts.length )];
+    $('.text').text( "We hate Koby's " + randno );
+    $('.text').css("font-family", fonto);
+});
+</script>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@kljungz" />
+<meta name="twitter:title" content="WeHateKoby.Club" />
+<meta name="twitter:description" content="Hate Koby? This is the club for you!" />
+<meta name="twitter:image" content="http://i.imgur.com/GyTz1Zb.png" />
 </html>
